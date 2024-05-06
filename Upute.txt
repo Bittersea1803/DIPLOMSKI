@@ -1,0 +1,51 @@
+NASLOV: Učenje hvatanja predmeta adaptivnom troprstom robotskom hvataljkom promatranjem čovjeka
+rbotska ruka UR 5
+1 nn open pose, polozaj prstiju za šaku, tocke
+2 klasikifacija ako je metaheursticki
+
+Drugi dio dovesti na konkretnu poziciju alat robota
+
+Asus XTion ProLive
+
+Šaka RobotiQ Adaptove 3 finger gripper
+
+Šimundić se javiti
+11:29 12.3.2024.
+- snimiti određeni broj slika s robota, pa učenje
+- U dockeru sve osposobiti, radiiti u svom enviroemnetu, neće se tako kositi s ničim drugim, V.Š.
+- ako je open pose, 24 točke ulaza (iz open posea) -> ne duboka mreža u četri klase
+1. faza
+	vidjeti iz open posea, koliko je to korisno, snimiti doređen broj slika
+V.Š.: Iz pytorcha, neka lakša, coffe model
+zaključak: određen broj slika, s određenim brojem predmeta, vidjet naoko kako promatra šaku, skeleton ruke, da bi odredili u prosotur gdje se to nalazi trebat će depth kamera
+
+C: nakon klasifikacije postoji, ljudks aruka nije ista kao i robotska ruka, prsti su razmaknuti između sebe jedan prst, drugi način hvatanja takmo da skupi taj jedan prst, ima i način da ih rašairi, i treći način da hbvaata stvar između ta dva prsta, 
+
+svaki put treba kalibrirati kameru na robotu
+
+koji centimetar iznad stola
+
+maramice iz onog paketa dm (160 maramica)
+
+namjestiti enviroment
+
+tri točke u odnosu na bazu robota, onda treba odrediti kako šaka u odnosu na bazu robota, polako ide u poziciju, ne odmah, onda neku konzervu, 3-d.
+
+ZA POČ: za jednu kategoriju, standarni hvat prepoznat
+prvo vidjeti pozicioniranje
+prvo dobiti poziciju prsta iz kamere, izračunat poziicju šake u odnosu na baze robota
+najveći problem: kako točke 
+
+imate tri točke, kako odrediti položaj KS
+
+10:56 12.4.2024.
+Pozdrav,
+
+šaljem link na Openpose u Pytorchu: https://github.com/Hzzone/pytorch-openpose.
+
+Molim te da proučiš o Dockeru i ROS-u (tutoriali na njihovoj stranici, dobivanje slika s topica i slično, MoveIt) - što su, kako se koriste itd. Kad završiš, pošalji mi mail pa ćemo se dogovoriti onda da ti objasnim kako se koristi kamera, kako namjestiti docker kontejner sa svime itd.
+
+Lp,
+Valentin
+
+
